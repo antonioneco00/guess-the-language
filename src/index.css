@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Cream Cake';
+  src: url('../public/cream_cake/Cream\ Cake.otf');
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-image: url('../public/background.png');
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:disabled {
+  color: #000;
+  cursor: default;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  width: 60vw;
+  height: 35vh;
+  background-color: #47ff92;
+  border: 10px solid #05959b;
+  border-radius: 25px;
+  box-shadow: 10px 10px 0 #222;
+  padding: 20px;
+}
+
+.App h1 {
+  text-shadow: 2px 2px 0px #444;
+  font-family: 'Cream Cake';
+  font-size: 50px;
+  margin: 12px 0;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.quiz {
+  display: none;
+}
+
+button {
+  background-color: #15d7c5;
+  border: 3px solid #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.quiz button {
+  border-radius: 15px;
+  padding: 5px 15px;
+  margin: 0 10px;
+}
+
+.welcome button,
+.results button {
+  font-size: 20px;
+  border-radius: 22px;
+  padding: 7px 20px;
+}
+
+.correct {
+  background-color: #0f0 !important;
+}
+
+.incorrect {
+  background-color: #f00 !important;
+}
+
+.score {
+  display: none;
+}
+
+.results {
+  display: none;
+}
