@@ -94,7 +94,10 @@ const Quiz = () => {
         <div className='container'>
             <div className='quiz'>
                 <Word lang={randomLang} id={randomWord} number={count} />
-                {langElements}
+                
+                <div className='btn-wrap'>
+                    {langElements}
+                </div>
             </div>
 
             <Score score={score.correctAnswers} getResults={getResults}/>

@@ -42,7 +42,6 @@ code {
 
 .App {
   width: 60vw;
-  height: 35vh;
   background-color: #47ff92;
   border: 10px solid #05959b;
   border-radius: 25px;
@@ -99,4 +98,15 @@ button {
 
 .results {
   display: none;
+}
+
+@media (max-width: 960px) {
+  .btn-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-wrap .btn {
+    margin: 5px 0;
+  }
 }
